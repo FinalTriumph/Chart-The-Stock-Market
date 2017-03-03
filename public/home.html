@@ -1,2 +1,27 @@
-<h3>Heeeeyyyyyy</h3>
-<h3>Hoooouuuuuu</h3>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css" >
+    <link href="/public/maincss.css" rel="stylesheet" type"text/css">
+    <title>Stocks</title>
+</head>
+
+<body>
+    <div id="outsidebox">
+        <div id="loader"></div>
+        <p2 id="loader-text">Loading data...</p2>
+        <div id="container"></div>
+        <div id="stocklist">
+            <div class="stockdiv" id="adddiv">
+                <p5>Syncs in realtime across clients</p5>
+                <input id="stockcode" placeholder="Stock code"/>
+                <button onclick="add()" id="addbutton">Add</button>
+            </div>
+        </div>
+    </div>
+    <p2>Application is using stock data from <a href="https://www.quandl.com/tools/api" target="_blank">Quandl API</a>.</p2>
+</body>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+<script type="text/javascript" src="controllers/getStocks.js"></script>

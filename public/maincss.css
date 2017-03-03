@@ -1,0 +1,111 @@
+body {
+    text-align: center;
+    margin: 15px;
+    background-color: #fafafa;
+    font-family: "Nunito";
+}
+#loader {
+    border: 30px solid #eee;
+    border-top: 30px solid #777;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    animation: spin 1.5s linear infinite;
+    margin: 70px auto 50px auto;
+}
+@keyframes spin {
+    0% {transform: rotate(0deg); }
+    100% {transform: rotate(360deg); }
+}
+p1 {
+    font-size: 14px;
+}
+p2 {
+    font-size: 14px;
+}
+p3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+p5 {
+    font-size: 14px;
+}
+a {
+    color: #000;
+}
+#outsidebox {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 30px;
+    min-width: 500;
+    border-radius: 2px;
+}
+#container {
+    height: 400px;
+    min-width: 400px;
+    border-radius: 2px;
+}
+#container, #stocklist {
+    display: none;
+}
+#stocklist {
+    text-align: left;
+}
+.stockdiv {
+    background-color: #fcfcfc;
+    width: 250px;
+    min-height: 90px;
+    border: 1px solid #777;
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 15px;
+    padding: 15px 20px;
+}
+.stockdiv:hover {
+    border-bottom: 5px solid #777;
+    padding-bottom: 11px;
+}
+#adddiv {
+    border-bottom: 5px solid #777;
+    padding-bottom: 6px;
+    padding-top: 20px;
+    min-height: 90px;
+}
+#addbutton {
+    background-color: #fafafa;
+    border: 1px solid #777;
+    border-radius: 1px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 50px;
+    margin-left: -7px;
+}
+#addbutton:hover {
+    background-color: #fff;
+    border-color: #333;
+    cursor: pointer;
+}
+.removebtn {
+    float: right;
+    font-size: 26px;
+    padding: 0px;
+    margin-top: -15px;
+    margin-right: -10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #777;
+    border: none;
+}
+.removebtn:hover {
+    color: #333;
+    cursor: pointer;
+}
+#stockcode, #addbutton{
+    margin-top: 10px;
+    height: 30px;
+    font-family: "Nunito";
+}
+#stockcode {
+    padding: 5px;
+}
